@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class SearchFilter {
+
+    public static void main(String[] args) {
+
+        Animal animal_0 = new Animal(11, "Lucky", "Dog");
+        Animal animal_1 = new Animal(13, "Wumpus", "Cat");
+        Animal animal_2 = new Animal(14, "Cinder", "Dog");
+        Animal animal_3 = new Animal(1, "Grayson", "Red Fox");
+        Animal animal_4 = new Animal(15, "Ace", "Dog");
+        Animal animal_5 = new Animal(9, "Glimmer", "Rabbit");
+        Animal animal_6 = new Animal(4, "Minnie", "Red Fox");
+        Animal animal_7 = new Animal(17, "Midnight", "Cat");
+        Animal animal_8 = new Animal(10, "Bandit", "Raccoon");
+        Animal animal_9 = new Animal(8, "Chewbacca", "Red Fox");
+
+        List<Animal> animals = Arrays.asList(animal_0, animal_1, animal_2, animal_3, animal_4, animal_5,
+                animal_6, animal_7, animal_8, animal_9);
+
+        List<Animal> searchResult = new ArrayList<>();
+
+        for (Animal animal : animals) {
+            if (animal.getAnimalAge() < 10) {
+                searchResult.add(animal);
+            }
+        }
+
+        System.out.println(searchResult);
+
+    }
+}
