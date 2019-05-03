@@ -1,0 +1,43 @@
+public class Animal {
+
+    private int age;
+    private String name;
+    private String species;
+
+    public Animal(int age, String name, String species) {
+        this.age = age;
+        this.name = name;
+        this.species = species;
+
+    }
+
+    public int getAnimalAge() {
+        return age;
+    }
+
+    public void setAnimalAge(int age) {
+        this.age = age;
+    }
+
+    public String getAnimalName() {
+        return name;
+    }
+
+    public void setAnimalName(String name) {
+        this.name = name;
+    }
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public void setSpecies(String species) {
+        this.species = species;
+    }
+
+    @Override
+    public String toString() {
+        return " Animal {" + "Age: " + age + "," + " Name: " + name + "," + " Species: " + species + '}' + "\n";
+    }
+
+}
