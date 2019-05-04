@@ -1,0 +1,39 @@
+public class SearchFilterDemo1 {
+
+    public static void main(String[] args) {
+
+        // Created an ArrayList to hold some animal names.
+        ArrayList animalNameList = new ArrayList();
+
+        // Added some animal names to the ArrayList.
+        animalNameList.add("Lucky");
+        animalNameList.add("Wumpus");
+        animalNameList.add("Ace");
+        animalNameList.add("Skippy");
+        animalNameList.add("Grayson");
+        animalNameList.add("Chewbacca");
+        animalNameList.add("Minnie");
+        System.out.println("Original Animal Names List:\n");
+
+        // Displaying the items in animalNameList and their indices (Original List).
+        for (int index = 0; index < animalNameList.size(); index++) {
+            System.out.println("Index: " + index + " Animal Name: "
+                    + animalNameList.get(index));
+        }
+
+        // Removing the item located at index 3.
+        animalNameList.remove(3);
+
+        System.out.println("\nThe item that was at index 3 has been removed. \n"
+                + "Here is the new adjusted list of items: \n");
+        System.out.println("Filtered Animal Names List: \n");
+
+        // Displaying the items in the animalNameList and their indices (Filtered List).
+        for (int index = 0; index < animalNameList.size(); index++) {
+            System.out.println("Index: " + index + " Animal Name: "
+                    + animalNameList.get(index));
+        }
+
+    }
+
+}
